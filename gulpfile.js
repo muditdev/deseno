@@ -34,7 +34,9 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
         server: {
             baseDir: '_site'
         },
-        notify: false
+        notify: false,
+        // addding port only for cloud9 server
+        // port : 8081
     });
 });
 
