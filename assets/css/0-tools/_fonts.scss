@@ -1,9 +1,11 @@
 @font-face {
-	font-family: 'chrome';
-	src: url('../fonts/ChromeBlack.eot');
-	src: local('☺'), url('../fonts/ChromeBlack.woff') format('woff'), url('../fonts/ChromeBlack.ttf') format('truetype'), url('../fonts/ChromeBlack.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'chrome_blackregular';
+    src: url('../fonts/chromeblack/chromeblack-webfont.woff2') format('woff2'),
+         url('../fonts/chromeblack/chromeblack-webfont.woff') format('woff'),
+         url('../fonts/chromeblack/chromeblack-webfont.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 //brandon
@@ -103,3 +105,5 @@
     font-weight: 100;
     font-style: normal;
 }
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic);

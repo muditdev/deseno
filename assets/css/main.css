@@ -1,5 +1,5 @@
-@charset "UTF-8";
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -148,9 +148,8 @@ textarea {
   font: inherit; }
 
 @font-face {
-  font-family: 'chrome';
-  src: url("../fonts/ChromeBlack.eot");
-  src: local("☺"), url("../fonts/ChromeBlack.woff") format("woff"), url("../fonts/ChromeBlack.ttf") format("truetype"), url("../fonts/ChromeBlack.svg") format("svg");
+  font-family: 'chrome_blackregular';
+  src: url("../fonts/chromeblack/chromeblack-webfont.woff2") format("woff2"), url("../fonts/chromeblack/chromeblack-webfont.woff") format("woff"), url("../fonts/chromeblack/chromeblack-webfont.ttf") format("ttf");
   font-weight: normal;
   font-style: normal; }
 
@@ -227,13 +226,35 @@ textarea {
   font-style: normal; }
 
 body {
-  background-color: white;
-  font-size: 14px;
-  line-height: 1.6;
-  font-family: 'Fira Sans', sans-serif;
-  color: #666;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-size-adjust: 100%; }
+  font-family: "Open Sans",sans-serif;
+  font-size: 1rem; }
+
+p {
+  font-weight: 100; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "chrome_blackregular",sans-serif;
+  letter-spacing: .17em;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+p {
+  margin: 0 0 20px 0;
+  letter-spacing: 1.2px;
+  line-height: 1.7; }
+
+em {
+  font-style: italic; }
+
+strong {
+  font-weight: bold; }
+
+hr {
+  border: solid #ddd;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 10px 0 30px;
+  height: 0; }
 
 ::-moz-selection {
   background: #FFF498; }
@@ -256,52 +277,6 @@ img::-moz-selection {
 body {
   -webkit-tap-highlight-color: #FFF498; }
 
-.gigantic, .huge, .large, .bigger, .big, h1, h2, h3, h4, h5, h6 {
-  color: #222;
-  font-weight: bold; }
-
-.gigantic {
-  font-size: 110px;
-  line-height: 1.09;
-  letter-spacing: -2px; }
-
-.huge, h1 {
-  font-size: 68px;
-  line-height: 1.05;
-  letter-spacing: -1px; }
-
-.large, h2 {
-  font-size: 42px;
-  line-height: 1.14; }
-
-.bigger, h3 {
-  font-size: 26px;
-  line-height: 1.38; }
-
-.big, h4 {
-  font-size: 22px;
-  line-height: 1.38; }
-
-.small, small {
-  font-size: 10px;
-  line-height: 1.2; }
-
-p {
-  margin: 0 0 20px 0; }
-
-em {
-  font-style: italic; }
-
-strong {
-  font-weight: bold; }
-
-hr {
-  border: solid #ddd;
-  border-width: 1px 0 0;
-  clear: both;
-  margin: 10px 0 30px;
-  height: 0; }
-
 a {
   color: #0074D9;
   text-decoration: none;
@@ -311,6 +286,5 @@ a:hover, a:focus {
   color: #40a6ff; }
 
 h1 {
-  font-family: "brandon",sans-serif;
   text-transform: uppercase;
   font-weight: 100; }
