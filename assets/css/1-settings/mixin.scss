@@ -1,0 +1,19 @@
+@mixin square($d) {
+  width: $d;
+  height: $d;
+}
+
+//full screen relative to parent
+
+@mixin pos0{
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+@mixin centerbox {
+  top: 50%;
+  left: 50%;
+  @include transform(translate(-50%,-50%));
+}
