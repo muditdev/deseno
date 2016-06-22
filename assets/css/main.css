@@ -152,7 +152,7 @@ textarea {
 
 @font-face {
   font-family: 'chrome_blackregular';
-  src: url("../fonts/chromeblack/chromeblack-webfont.woff2") format("woff2"), url("../fonts/chromeblack/chromeblack-webfont.woff") format("woff"), url("../fonts/chromeblack/chromeblack-webfont.ttf") format("ttf");
+  src: url("../fonts/chromeblack/chromeblack-webfont.woff2") format("woff2"), url("../fonts/chromeblack/chromeblack-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -170,13 +170,13 @@ textarea {
 
 @font-face {
   font-family: 'brandon';
-  src: url("../fonts/brandon/brandon_grotesque_bold_italic.woff2") format("woff2");
+  src: url("../fonts/brandon/brandon_grotesque_bold_italic.woff2") format("woff2"), url("../fonts/brandon/brandon_grotesque_bold_italic.woff") format("woff");
   font-weight: 700;
   font-style: italic; }
 
 @font-face {
   font-family: 'brandon';
-  src: url("../fonts/brandon/brandon_grotesque_bold.woff2") format("woff2");
+  src: url("../fonts/brandon/brandon_grotesque_bold.woff2") format("woff2"), url("../fonts/brandon/brandon_grotesque_bold.woff") format("woff");
   font-weight: 700;
   font-style: normal; }
 
@@ -431,11 +431,11 @@ header.main-header .header-content .hero .btn-border:hover {
 
 a[class^="btn"] {
   font-family: "brandon",sans-serif;
-  font-size: 1.1em;
+  font-size: 1em;
   color: #fff;
   text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 2px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
   display: inline-block;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out; }
@@ -443,7 +443,8 @@ a[class^="btn"] {
 a.btn-border {
   background: transparent;
   border: 2px solid;
-  -webkit-border-radius: 30px;
-          border-radius: 30px;
-  padding: 10px 30px;
+  -webkit-border-radius: 50px;
+          border-radius: 50px;
+  line-height: 1.5;
+  padding: 15px 25px 13px 25px;
   vertical-align: baseline; }
