@@ -262,6 +262,9 @@ textarea {
 .clearfix {
   display: block; }
 
+li {
+  list-style-type: none; }
+
 body {
   font-family: "Open Sans",sans-serif;
   font-size: 1rem; }
@@ -325,7 +328,8 @@ a:hover, a:focus {
 header.main-header {
   position: relative;
   background: #34495e;
-  height: 100vh; }
+  height: 100vh;
+  overflow: auto; }
 
 header.main-header .header-bg {
   position: absolute;
@@ -339,6 +343,7 @@ header.main-header .header-bg {
   background-size: 1366px; }
 
 header.main-header .header-top {
+  margin-top: 30px;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -403,7 +408,7 @@ header.main-header nav.navigation a.trigger.cross path#middle {
   stroke-dashoffset: -115px;
   stroke-dasharray: 1px 220px; }
 
-header.main-header figure.logo {
+header.main-header .logo {
   fill: #fff; }
 
 header.main-header .header-content {
@@ -429,22 +434,73 @@ header.main-header .header-content .hero .btn-border:hover {
   background: #fff;
   border-color: #fff; }
 
+main.main-content section.intro {
+  color: #34495e;
+  margin-top: 80px;
+  text-align: center; }
+
+main.main-content section.intro h2 {
+  margin: 50px 0; }
+
+main.main-content section.intro h2::after {
+  content: '';
+  display: block;
+  background: url(../img/squiggle.gif) no-repeat;
+  width: 90px;
+  height: 10px;
+  margin: 25px auto; }
+
 a[class^="btn"] {
   font-family: "brandon",sans-serif;
   font-size: 1em;
-  color: #fff;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 2.5px;
   display: inline-block;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out; }
-
-a.btn-border {
-  background: transparent;
-  border: 2px solid;
   -webkit-border-radius: 50px;
           border-radius: 50px;
   line-height: 1.5;
-  padding: 15px 25px 13px 25px;
-  vertical-align: baseline; }
+  padding: 16px 25px 13px 25px;
+  vertical-align: baseline;
+  margin: 5px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+
+a[class^="btn"]:hover {
+  -webkit-box-shadow: 0 3px 8px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 8px 0px rgba(0, 0, 0, 0.2); }
+
+a.sm[class^="btn"] {
+  font-size: .85em;
+  padding: 11px 22px 8px 22px; }
+
+a.btn-border {
+  color: #fff;
+  border: 2px solid; }
+
+a.btn-fill {
+  color: #fff; }
+
+a.btn-border.blue {
+  color: #34495e; }
+
+a.btn-border.red {
+  color: #fd7576; }
+
+a.btn-border.yellow {
+  color: #e4b052; }
+
+a.btn-border.sky {
+  color: #4db8de; }
+
+a.btn-fill.blue {
+  background: #34495e; }
+
+a.btn-fill.red {
+  background: #fd7576; }
+
+a.btn-fill.yellow {
+  background: #e4b052; }
+
+a.btn-fill.sky {
+  background: #4db8de; }

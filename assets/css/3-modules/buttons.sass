@@ -1,17 +1,39 @@
 a[class^="btn"]
   font-family: $brandon
   font-size: 1em
-  color: #fff
   text-transform: uppercase
   font-weight: 700
   letter-spacing: 2.5px
   display: inline-block
-  @include transition(all .5s ease-in-out)
-a.btn-border
-  background: transparent
-  border: 2px solid
   border-radius: 50px
   line-height: 1.5
-  padding: 15px 25px 13px 25px
-  //padding: 10px 30px
+  padding: 16px 25px 13px 25px
   vertical-align: baseline
+  margin: 5px
+  @include transition(all .5s ease-in-out)
+  &:hover
+    box-shadow: 0 3px 8px 0px rgba(0,0,0,0.2)
+a.sm[class^="btn"]
+  font-size: .85em
+  padding: 11px 22px 8px 22px
+a.btn-border
+  color: #fff
+  border: 2px solid
+a.btn-fill
+  color: #fff
+a.btn-border.blue
+  color: $dark-blue
+a.btn-border.red
+  color: $red
+a.btn-border.yellow
+  color: $yellow
+a.btn-border.sky
+  color: $blue
+a.btn-fill.blue
+  background: $dark-blue
+a.btn-fill.red
+  background: $red
+a.btn-fill.yellow
+  background: $yellow
+a.btn-fill.sky
+  background: $blue

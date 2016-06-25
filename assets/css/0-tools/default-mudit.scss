@@ -30,3 +30,7 @@
 /* start commented backslash hack \*/
 * html .clearfix { height: 1%; }
 .clearfix { display: block; }
+
+li{
+  list-style-type: none;
+}
