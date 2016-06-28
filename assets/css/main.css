@@ -152,7 +152,8 @@ textarea {
 
 @font-face {
   font-family: 'chrome_blackregular';
-  src: url("../fonts/chromeblack/chromeblack-webfont.woff2") format("woff2"), url("../fonts/chromeblack/chromeblack-webfont.woff") format("woff");
+  src: url("../fonts/chromeblack/chromeblack.eot");
+  src: url("../fonts/chromeblack/chromeblack.eot?#iefix") format("embedded-opentype"), url("../fonts/chromeblack/chromeblack.svg#chrome_blackregular") format("svg"), url("../fonts/chromeblack/chromeblack.woff2") format("woff2"), url("../fonts/chromeblack/chromeblack.woff") format("woff"), url("../fonts/chromeblack/chromeblack.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -227,6 +228,10 @@ textarea {
   src: url("../fonts/brandon/brandon_grotesque_thin.woff2") format("woff2"), url("../fonts/brandon/brandon_grotesque_thin.woff") format("woff");
   font-weight: 100;
   font-style: normal; }
+
+html {
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important; }
 
 .container {
   padding-right: 15px;
@@ -629,6 +634,93 @@ section.services .hs-wrap .sevices-info {
   max-width: 400px;
   color: #34495e; }
 
+section.products {
+  margin: 140px auto 80px; }
+
+section.products .container {
+  max-width: 990px; }
+
+section.products ul.products-items {
+  margin: 80px auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+section.products ul.products-items li {
+  margin: 15px; }
+
+section.products ul.products-items li a {
+  display: block;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  position: relative; }
+
+section.products ul.products-items li a svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  fill: #fff; }
+
+section.products ul.products-items li a span {
+  display: block;
+  padding: 15px 0 10px; }
+
+section.products ul.products-items li:nth-child(1) {
+  color: #e4b052; }
+
+section.products ul.products-items li:nth-child(1) a {
+  background: #e4b052; }
+
+section.products ul.products-items li:nth-child(2) {
+  color: #fd7576; }
+
+section.products ul.products-items li:nth-child(2) a {
+  background: #fd7576; }
+
+section.products ul.products-items li:nth-child(3) {
+  color: gray; }
+
+section.products ul.products-items li:nth-child(3) a {
+  background: gray; }
+
+section.products ul.products-items li:nth-child(4) {
+  color: #4db8de; }
+
+section.products ul.products-items li:nth-child(4) a {
+  background: #4db8de; }
+
+section.products ul.products-items p.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "brandon",sans-serif;
+  font-weight: 700;
+  font-size: 1.4em;
+  margin-top: 15px; }
+
 a[class^="btn"] {
   font-family: "brandon",sans-serif;
   font-size: 1em;
@@ -683,6 +775,34 @@ a.btn-fill.yellow {
 
 a.btn-fill.sky {
   background: #4db8de; }
+
+.ds-head {
+  text-align: center;
+  color: #34495e; }
+
+.ds-head svg {
+  fill: #34495e; }
+
+.ds-head h2 {
+  margin-top: 30px; }
+
+.ds-head h2 small {
+  font-family: "brandon",sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  text-transform: none;
+  display: block;
+  font-size: .7em;
+  letter-spacing: 1.5px;
+  margin: 15px auto; }
+
+.ds-head h2::after {
+  content: '';
+  display: block;
+  background: url(../img/squiggle.gif) no-repeat;
+  width: 90px;
+  height: 10px;
+  margin: 25px auto; }
 
 @media screen and (max-width: 600px) {
   section.services .hs-wrap {
