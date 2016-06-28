@@ -1,7 +1,11 @@
 @font-face {
     font-family: 'chrome_blackregular';
-    src: url('../fonts/chromeblack/chromeblack-webfont.woff2') format('woff2'),
-         url('../fonts/chromeblack/chromeblack-webfont.woff') format('woff');
+    src: url('../fonts/chromeblack/chromeblack.eot');
+    src: url('../fonts/chromeblack/chromeblack.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/chromeblack/chromeblack.svg#chrome_blackregular') format('svg'),
+         url('../fonts/chromeblack/chromeblack.woff2') format('woff2'),
+         url('../fonts/chromeblack/chromeblack.woff') format('woff'),
+         url('../fonts/chromeblack/chromeblack.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 

@@ -1,0 +1,48 @@
+section.products
+  margin: 140px auto 80px
+  .container
+    max-width: 990px
+  ul.products-items
+    margin: 80px auto
+    @include display(flex)
+    @include justify-content(center)
+    @include flex-wrap(wrap)
+    li
+      margin: 15px
+      a
+        display: block
+        text-align: center
+        width: 200px
+        height: 200px
+        border-radius: 20px
+        position: relative
+        svg
+          position: absolute
+          @include centerbox()
+          fill: #fff
+        span
+          display: block
+          padding: 15px 0 10px
+      &:nth-child(1)
+        color: $yellow
+        a
+          background: $yellow
+      &:nth-child(2)
+        color: $red
+        a
+         background: $red
+      &:nth-child(3)
+        color: $gray
+        a
+          background: $gray
+      &:nth-child(4)
+        color: $blue
+        a
+          background: $blue
+    p.title
+      text-align: center
+      text-transform: uppercase
+      font-family: $brandon
+      font-weight: 700
+      font-size: 1.4em
+      margin-top: 15px
