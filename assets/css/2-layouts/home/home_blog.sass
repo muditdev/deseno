@@ -1,0 +1,82 @@
+section.hblog
+  padding: 140px 0 80px 0
+  background: url(../img/topo_bg.jpg) no-repeat top center
+  background-size: cover
+  .blog-cards
+    @include display(flex)
+    @include justify-content(center)
+    @include flex-direction(column )
+    .row
+      @include display(flex)
+      @include justify-content(center)
+    .blogCard
+      margin: 35px
+      width: 575px
+      min-height: 327px
+      background: #fff
+      position: relative
+      border-radius: 20px
+      overflow: hidden
+      box-shadow: 0 0 45px 0px rgba(0, 0, 0, 0.15)
+      figure.blog-image
+        position: absolute
+        width: 50%
+        height: 100%
+        overflow: hidden
+        background: $dark-blue
+        img
+          opacity: .7
+      .card-content
+        position: absolute
+        right: 0
+        width: 45%
+        top: 50%
+        @include transform(translateY(-50%))
+        .blog-title
+          font: normal 700 1.41em $brandon
+          letter-spacing: 1px
+          text-transform: uppercase
+          color: $dark-blue
+          display: block
+        .blog-author
+          display: block
+          font: italic 400 1em $brandon
+          color: $dark-blue
+          margin: 5px 0 8px 0
+          &::before
+            content: 'by'
+            font: normal 300 1em $brandon
+            margin-right: 5px
+        .btn-fill
+          color: #fff!important
+          background: $dark-blue
+      &.rc
+        figure.blog-image
+          right: 0
+          img
+            position: absolute
+            right: 0
+        .card-content
+          left: 5%
+      //for colors
+      &.red
+        .blog-image
+          background: $red
+        .card-content a
+          color: $red
+        .btn-fill
+          @extend .red
+      &.yellow
+        .blog-image
+          background: $yellow
+        .card-content a
+            color: $yellow
+        .btn-fill
+          @extend .yellow
+      &.sky
+        .blog-image
+          background: $blue
+        .card-content a
+            color: $blue
+        .btn-fill
+          @extend .sky

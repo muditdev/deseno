@@ -11,6 +11,10 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
+*{
+  margin: 0;
+  padding: 0;
+}
 /**
  * Remove the margin in all browsers (opinionated).
  */
@@ -92,6 +96,7 @@ template, /* 1 */
 a {
   background-color: transparent; /* 1 */
   -webkit-text-decoration-skip: objects; /* 2 */
+  cursor: pointer;
 }
 
 /**
@@ -225,14 +230,6 @@ pre,
 samp {
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
-}
-
-/**
- * Add the correct margin in IE 8.
- */
-
-figure {
-  margin: 1em 40px;
 }
 
 /**
