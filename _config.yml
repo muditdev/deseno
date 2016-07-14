@@ -2,5 +2,5 @@ name: Your New Jekyll Site
 markdown: kramdown
 highlighter: rouge # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
-baseurl: ''
+baseurl: 'http://www.techmudit.com/deseno/'
 blogimgurl: /assets/img/blog
