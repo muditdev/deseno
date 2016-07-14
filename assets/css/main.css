@@ -266,10 +266,6 @@ textarea {
   font-weight: 100;
   font-style: normal; }
 
-html {
-  text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: antialiased !important; }
-
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -316,8 +312,6 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Gotham Rounded A",sans-serif;
-  letter-spacing: 1.5px;
-  font-weight: 700;
   text-transform: uppercase; }
 
 p {
@@ -990,11 +984,193 @@ section.testimonial .tst-bullets a.active {
 section.testimonial .tst-bullets a:hover {
   background: #34495e; }
 
+header.blog-header {
+  background: url(../img/blog-header.jpg) no-repeat center;
+  background-size: cover; }
+
+header.blog-header::before {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0)), to(#34495e));
+  background-image: -webkit-linear-gradient(top left, rgba(255, 255, 255, 0), #34495e);
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0), #34495e);
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+header.blog-header .header-top {
+  position: relative;
+  z-index: 2; }
+
+header.blog-header .bh-content {
+  text-align: center;
+  max-width: 600px;
+  width: 80%;
+  color: #fff;
+  bottom: 15%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%); }
+
+header.blog-header .bh-content h1::after {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 5px;
+  background: #fff;
+  margin: 20px auto;
+  -webkit-border-radius: 20px;
+          border-radius: 20px; }
+
+main.posts section.blog-post {
+  text-align: center;
+  position: relative;
+  height: 700px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center; }
+
+main.posts section.blog-post::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: .7; }
+
+main.posts section.blog-post .post-meta {
+  z-index: 2;
+  position: relative;
+  top: 20%; }
+
+main.posts section.blog-post .post-meta a.post-author {
+  color: #fff;
+  border: 2px solid;
+  display: inline-block;
+  font: normal 500 0.94em "brandon-grotesque",sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 15px 30px; }
+
+main.posts section.blog-post .post-meta span.post-date {
+  display: block;
+  color: #fff;
+  font-size: .7em;
+  letter-spacing: 1px;
+  font-weight: 100;
+  margin: 10px 0; }
+
+main.posts section.blog-post article.post-content {
+  position: absolute;
+  width: 90%;
+  max-width: 650px;
+  top: 40%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background: #fff;
+  -webkit-border-radius: 30px;
+          border-radius: 30px; }
+
+main.posts section.blog-post article.post-content h3.post-title {
+  padding: 25px;
+  font-weight: 500;
+  letter-spacing: .5px;
+  position: relative;
+  top: -20px;
+  -webkit-border-radius: 30px 30px 0 0;
+          border-radius: 30px 30px 0 0; }
+
+main.posts section.blog-post article.post-content h3.post-title a {
+  color: #fff; }
+
+main.posts section.blog-post article.post-content p {
+  color: rgba(0, 0, 0, 0.8);
+  margin: 0;
+  padding: 10px 20px 0; }
+
+main.posts section.blog-post article.post-content .read-more {
+  padding: 12px 40px;
+  font-size: 1.05em;
+  position: relative;
+  top: 30px;
+  background: #fff; }
+
+main.posts section.blog-post.theme-red::after {
+  background-color: #fd7576; }
+
+main.posts section.blog-post.theme-red h3.post-title {
+  background: #fd7576; }
+
+main.posts section.blog-post.theme-red .read-more {
+  color: #fd7576; }
+
+main.posts section.blog-post.theme-blue::after {
+  background-color: #4db8de; }
+
+main.posts section.blog-post.theme-blue h3.post-title {
+  background: #4db8de; }
+
+main.posts section.blog-post.theme-blue .read-more {
+  color: #4db8de; }
+
+main.posts section.blog-post.theme-green::after {
+  background-color: #3cde75; }
+
+main.posts section.blog-post.theme-green h3.post-title {
+  background: #3cde75; }
+
+main.posts section.blog-post.theme-green .read-more {
+  color: #3cde75; }
+
+main.posts section.blog-post.theme-yellow::after {
+  background-color: #e4b052; }
+
+main.posts section.blog-post.theme-yellow h3.post-title {
+  background: #e4b052; }
+
+main.posts section.blog-post.theme-yellow .read-more {
+  color: #e4b052; }
+
 footer.main-footer {
   background: url(../img/bg2.svg);
   background-color: #f8f9fa;
-  height: 600px;
+  background-size: cover;
   overflow: hidden; }
+
+footer.main-footer .footer-content {
+  margin-top: 60px;
+  text-align: center; }
+
+footer.main-footer .footer-content .fLogo svg {
+  fill: #34495e; }
+
+footer.main-footer .footer-content h3 {
+  color: #34495e;
+  margin: 15px 0;
+  font-size: 1.4em;
+  text-transform: capitalize;
+  text-shadow: 0 3px 1px rgba(0, 0, 0, 0.15); }
+
+footer.main-footer .footer-content .social-links a {
+  font: italic 700 0.91em "brandon-grotesque",sans-serif;
+  letter-spacing: 1px;
+  color: #34495e;
+  text-transform: uppercase;
+  margin: 0 5px; }
+
+footer.main-footer .footer-content .social-links a:hover {
+  text-decoration: line-through; }
+
+footer.main-footer .copyright {
+  font: italic 600 0.91em "brandon-grotesque",sans-serif;
+  margin: 30px 0 20px; }
 
 a[class^="btn"] {
   font-family: "brandon-grotesque",sans-serif;

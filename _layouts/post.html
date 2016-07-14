@@ -2,8 +2,11 @@
 layout: default
 ---
 <h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<p class="meta">// {{ page.date | date_to_string }} <em>// {{ page.author }}</em>  </p>
 
 <div class="post">
+  <img src="{{ page.image }}" alt="" />
 {{ content }}
+
+<h3>Quote: {{page.quote}} </h3>
 </div>
