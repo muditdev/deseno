@@ -1,0 +1,37 @@
+---
+layout: default
+title: blog
+---
+
+{% include blog-header.html %}
+
+<main class="main-content posts">
+  <!-- blog loop starts-->
+  {% for post in site.posts %}
+    <section class="blog-post {{post.theme}}" style="background-image:url({{ site.blogimgurl }}/{{ post.image }})" >
+
+      <div class="post-meta">
+        <a class="post-author" href="#">Author - {{post.author}}</a>
+        <span class="post-date">Published on ❤ <em> {{ post.date | date: "%b %-d, %Y" }}</em></span>
+      </div>
+
+      <article class="post-content">
+          <h3 class="post-title">
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h3>
+          <p>{{ post.brief }}</p>
+          <a href="{{ post.url | prepend: site.baseurl }}" class="btn-border read-more">Read More</a>
+      </article>
+
+    </section>
+  {% endfor %}
+  <!-- blog loop ends-->
+
+
+
+
+    <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
+
+</main>
+
+{% include footer.html %}

@@ -1,0 +1,32 @@
+header.blog-header
+  background: url(../img/blog-header.jpg) no-repeat center
+  background-size: cover
+  &::before
+    background-image: linear-gradient(to bottom right,rgba(255,255,255,0),$dark-blue)
+    content: ''
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+  .header-top
+    position: relative
+    z-index: 2
+  .bh-content
+    text-align: center
+    max-width: 600px
+    width: 80%
+    color: #fff
+    bottom: 15%
+    position: absolute
+    left: 50%
+    @include transform(translateX(-50%))
+    h1
+      &::after
+        content: ''
+        display: block
+        width: 35px
+        height: 5px
+        background: #fff
+        margin: 20px auto
+        border-radius: 20px
