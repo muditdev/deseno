@@ -3,4 +3,4 @@ markdown: kramdown
 highlighter: rouge # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 baseurl: ''
-blogimgurl: /assets/img/blog
+blogimgurl: "assets/img/blog"
