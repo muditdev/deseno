@@ -8,7 +8,7 @@ title: blog
 <main class="main-content posts">
   <!-- blog loop starts-->
   {% for post in site.posts %}
-    <section class="blog-post {{post.theme}}" style="background-image:url({{ site.blogimgurl }}/{{ post.image }})" >
+    <section class="blog-post {{post.theme}}" style="background-image:url({{ site.baseurl }}/{{ site.blogimgurl }}/{{ post.image }})" >
 
       <div class="post-meta">
         <a class="post-author" href="#">Author - {{post.author}}</a>
