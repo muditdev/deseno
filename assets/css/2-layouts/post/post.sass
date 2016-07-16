@@ -1,0 +1,71 @@
+// color setup
+main.post-content
+  &.theme-red > section.title-box
+    h2, span, a
+      color: $red
+  &.theme-blue > section.title-box
+    h2, span, a
+      color: $blue
+  &.theme-green > section.title-box
+    h2, span, a
+      color: $green
+  &.theme-yellow > section.title-box
+    h2, span, a
+      color: $yellow
+// color setup
+
+main.post-content
+  position: relative
+  section.title-box
+    background: #fff
+    max-width: 900px
+    width: 84%
+    margin: 0 auto
+    text-align: center
+    padding: 50px 4%
+    position: relative
+    top: -75px
+    border-radius: 4px
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.09)
+    .meta
+      margin-top: 15px
+      a, span
+        font: italic 200 1em $brandon
+        letter-spacing: .5px
+        margin: 0 10px
+  article.post
+    max-width: 900px
+    margin: 0 auto
+    width: 100%
+    figure.post-banner > img
+        width: 100%
+    .brief
+      text-align: center
+      width: 70%
+      margin: 0 auto
+      margin-bottom: 50px
+      letter-spacing: 1.5px
+      color: rgba(0,0,0,.7)
+      line-height: 2
+    .content
+      margin: 30px 0
+      color: rgba(0,0,0,.8)
+      img
+        width: 100%
+      h1,h2,h3,h4,h5
+        font-family: $brandon
+        color: $dark-blue
+        text-transform: none
+        font-weight: 500
+        letter-spacing: 1px
+        line-height: 2
+      a
+        color: $dark-blue
+        text-decoration: overline
+        font-weight: 500
+        display: inline-block
+        @include transition(all .5s)
+        &:hover
+          position: relative
+          @include transform(scale(1.2))
+          background: #fff

@@ -1,12 +1,41 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">// {{ page.date | date_to_string }} <em>// {{ page.author }}</em>  </p>
 
-<div class="post">
-  <img src="{{ page.image }}" alt="" />
-{{ content }}
+<!-- header -->
+<header class="main-header post-header {{page.theme}}">
+  <div class="container">
+    {% include header-top.html %}
+  </div>
+</header>
 
-<h3>Quote: {{page.quote}} </h3>
-</div>
+<main class="post-content {{page.theme}}">
+
+  <section class="title-box">
+    <h2>{{ page.title }}</h2>
+    <div class="meta">
+        <span class="date">// {{ page.date | date_to_string }}</span>
+        <a target="_blank" href="{{ page.authorUrl }}">// {{ page.author }}</a>
+    </div>
+  </section>
+
+  <article class="post">
+      <p class="brief">
+        {{ page.brief }}
+      </p>
+      <figure class="post-banner">
+        <img src="{{ site.baseurl }}/{{ site.blogimgurl }}/{{ page.postBanner }}" alt="" />
+      </figure>
+
+      <div class="content">
+        {{ content }}
+      </div>
+
+  </article>
+
+
+
+    <h3>Quote: {{page.quote}} </h3>
+</main>
+
+{% include footer.html %}

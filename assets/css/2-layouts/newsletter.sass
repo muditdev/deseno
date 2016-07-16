@@ -1,0 +1,74 @@
+section.newsletter
+  position: relative
+  text-align: center
+  h3
+    font-family: $brandon
+    font-size: 1.5em
+    letter-spacing: 2px
+    font-weight: 200
+    font-style: italic
+    color: $red
+    margin-bottom: 0
+    span
+      font-style: normal
+      font-weight: 700
+  form.nletter
+    .nl-wrap
+      background: #fff
+      max-width: 700px
+      width: 80%
+      display: inline-block
+      height: 60px
+      overflow: hidden
+      border-radius: 50px
+      position: relative
+      input
+        line-height: 60px
+        height: 60px
+        &:focus
+          outline: 0
+      input[type="email"]
+        @include appearance(none)
+        border: 0
+        color: $red
+        letter-spacing: 1.2px
+        width: 100%
+        position: absolute
+        padding-left: 40px
+        left: 0
+        font-weight: 100
+        @include placeholder
+          color: rgba(0,0,0,.7)
+          font-style: italic
+      input[type="submit"]
+        @include appearance(none)
+        border: 0
+        position: absolute
+        right: 0
+        background: $red
+        font-family: $heading
+        color: #fff
+        cursor: pointer
+        letter-spacing: .1em
+        padding: 2px 30px 0
+        font-weight: 500
+        font-size: 1.1em
+
+  // custom form design for different pages
+  &.home-nl > form > .nl-wrap
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.23) , 0 0 0px 20px rgba(255,255,255,0.7)
+        z-index: 1
+        top: 30px
+  &.blog-nl
+    margin: 100px 0
+    h3
+      color: $gray
+    form
+      margin-top: 30px
+      .nl-wrap
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.23)
+        z-index: 1
+        input[type="email"]
+          color: $gray
+        input[type="submit"]
+          background: $gray
