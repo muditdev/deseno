@@ -1245,9 +1245,8 @@ main.post-content article.post .content h1, main.post-content article.post .cont
   line-height: 2; }
 
 main.post-content article.post .content a {
-  color: #34495e;
-  text-decoration: overline;
-  font-weight: 500;
+  color: #fd7576;
+  font-weight: 600;
   display: inline-block;
   -webkit-transition: all 0.5s;
   transition: all 0.5s; }
@@ -1258,6 +1257,33 @@ main.post-content article.post .content a:hover {
   -ms-transform: scale(1.2);
   transform: scale(1.2);
   background: #fff; }
+
+main.post-content .quote {
+  background: url(../img/blog/quoteBG.jpg) center center;
+  background-size: cover;
+  padding: 100px 0;
+  text-align: center; }
+
+main.post-content .quote h3 {
+  color: #fff;
+  max-width: 720px;
+  font-size: 1.7em;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  margin: 0 auto; }
+
+main.post-content .quote a.btn.tweet {
+  text-transform: none;
+  color: #27a5d1;
+  background: #fff;
+  font-style: italic;
+  font-size: 1.5em;
+  margin-top: 30px;
+  padding: 15px 40px; }
+
+main.post-content .quote a.btn.tweet:hover {
+  color: #fff;
+  background: #4db8de; }
 
 footer.main-footer {
   background: url(../img/bg2.svg);

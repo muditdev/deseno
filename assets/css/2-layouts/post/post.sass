@@ -60,12 +60,35 @@ main.post-content
         letter-spacing: 1px
         line-height: 2
       a
-        color: $dark-blue
-        text-decoration: overline
-        font-weight: 500
+        color: $red
+        font-weight: 600
         display: inline-block
         @include transition(all .5s)
         &:hover
           position: relative
           @include transform(scale(1.2))
           background: #fff
+
+  .quote
+    background: url(../img/blog/quoteBG.jpg) center center
+    background-size: cover
+    padding: 100px 0
+    text-align: center
+    h3
+      color: #fff
+      max-width: 720px
+      font-size: 1.7em
+      line-height: 1.5
+      letter-spacing: 1px
+      margin: 0 auto
+    a.btn.tweet
+      text-transform: none
+      color: darken($blue, 10)
+      background: #fff
+      font-style: italic
+      font-size: 1.5em
+      margin-top: 30px
+      padding: 15px 40px
+      &:hover
+        color: #fff
+        background: $blue
