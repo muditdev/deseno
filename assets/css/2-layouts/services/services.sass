@@ -16,3 +16,59 @@ header.services-header
 main.services-content
   section.intro
     color: $gray
+
+section.ds-services
+  background: url(../img/services/dss-bg.jpg) no-repeat center bottom
+  background-color: #ededed
+  padding: 100px 0 400px
+  text-align: center
+  .btn-border
+    margin-top: 30px
+
+.dss-container
+  @include display(flex)
+  @include flex-wrap(wrap)
+  max-width: 900px
+  width: 80%
+  margin: 0 auto
+  .dss-item
+    @include box-sizing(border-box)
+    .dss-content
+      text-align: center
+      background: #fff
+      padding: 40px 0
+      margin: 10px
+      border-radius: 10px
+      h3
+        color: $dark-blue
+        margin-top: 15px
+        &:hover
+          color: $red
+    &:nth-child(1)
+      @include flex-basis(30%)
+      max-width: 30%
+    &:nth-child(2)
+      @include flex-basis(35%)
+      max-width: 35%
+    &:nth-child(3)
+      @include flex-basis(35%)
+      max-width: 35%
+    &:nth-child(4)
+      @include flex-basis(35%)
+      max-width: 35%
+    &:nth-child(5)
+      @include flex-basis(30%)
+      max-width: 30%
+    &:nth-child(6)
+      @include flex-basis(35%)
+      max-width: 35%
+    //these media rule will be moved to another file later
+    @media screen and (max-width: 900px)
+      @include flex-basis(50% !important)
+      max-width: 50%!important
+    @media screen and (max-width: 640px)
+      @include flex-basis(100% !important)
+      max-width: 100%!important
+      .dss-content
+        max-width: 300px
+        margin: 10px auto

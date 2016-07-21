@@ -1321,6 +1321,105 @@ header.services-header .header-content h2 {
 main.services-content section.intro {
   color: gray; }
 
+section.ds-services {
+  background: url(../img/services/dss-bg.jpg) no-repeat center bottom;
+  background-color: #ededed;
+  padding: 100px 0 400px;
+  text-align: center; }
+
+section.ds-services .btn-border {
+  margin-top: 30px; }
+
+.dss-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 900px;
+  width: 80%;
+  margin: 0 auto; }
+
+.dss-container .dss-item {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.dss-container .dss-item .dss-content {
+  text-align: center;
+  background: #fff;
+  padding: 40px 0;
+  margin: 10px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px; }
+
+.dss-container .dss-item .dss-content h3 {
+  color: #34495e;
+  margin-top: 15px; }
+
+.dss-container .dss-item .dss-content h3:hover {
+  color: #fd7576; }
+
+.dss-container .dss-item:nth-child(1) {
+  -webkit-flex-basis: 30%;
+  flex-basis: 30%;
+  -ms-flex-preferred-size: 30%;
+  max-width: 30%; }
+
+.dss-container .dss-item:nth-child(2) {
+  -webkit-flex-basis: 35%;
+  flex-basis: 35%;
+  -ms-flex-preferred-size: 35%;
+  max-width: 35%; }
+
+.dss-container .dss-item:nth-child(3) {
+  -webkit-flex-basis: 35%;
+  flex-basis: 35%;
+  -ms-flex-preferred-size: 35%;
+  max-width: 35%; }
+
+.dss-container .dss-item:nth-child(4) {
+  -webkit-flex-basis: 35%;
+  flex-basis: 35%;
+  -ms-flex-preferred-size: 35%;
+  max-width: 35%; }
+
+.dss-container .dss-item:nth-child(5) {
+  -webkit-flex-basis: 30%;
+  flex-basis: 30%;
+  -ms-flex-preferred-size: 30%;
+  max-width: 30%; }
+
+.dss-container .dss-item:nth-child(6) {
+  -webkit-flex-basis: 35%;
+  flex-basis: 35%;
+  -ms-flex-preferred-size: 35%;
+  max-width: 35%; }
+
+@media screen and (max-width: 900px) {
+  .dss-container .dss-item {
+    -webkit-flex-basis: 50% !important;
+    flex-basis: 50% !important;
+    -ms-flex-preferred-size: 50% !important;
+    max-width: 50% !important; } }
+
+@media screen and (max-width: 640px) {
+  .dss-container .dss-item {
+    -webkit-flex-basis: 100% !important;
+    flex-basis: 100% !important;
+    -ms-flex-preferred-size: 100% !important;
+    max-width: 100% !important; }
+  .dss-container .dss-item .dss-content {
+    max-width: 300px;
+    margin: 10px auto; } }
+
 a[class^="btn"] {
   font-family: "brandon-grotesque",sans-serif;
   font-size: 1.2em;
