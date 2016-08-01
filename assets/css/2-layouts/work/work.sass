@@ -1,0 +1,32 @@
+header.work-header
+  background: url(../img/work/work_header.jpg) center center
+  background-size: cover
+  section.work-cat
+    margin-top: 10%
+    @include transform(scale(.85))
+    h1.title
+      color: #fff
+      text-align: center
+      margin-bottom: 50px
+      &::after
+        content: ''
+        background: #fff
+        display: block
+        border-radius: 10px
+        width: 100px
+        height: 6px
+        margin: 20px auto
+
+main.work-content
+  section.project
+    .project-container
+      @include display(flex)
+      border: solid red
+      max-width: 900px
+      width: 80%
+      margin: 0 auto
+      .half
+        @include flex-basis(50%)
+        max-width: 50%
+        background: red
+        border: solid

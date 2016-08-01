@@ -1420,6 +1420,52 @@ section.ds-services .btn-border {
     max-width: 300px;
     margin: 10px auto; } }
 
+header.work-header {
+  background: url(../img/work/work_header.jpg) center center;
+  background-size: cover; }
+
+header.work-header section.work-cat {
+  margin-top: 10%;
+  -webkit-transform: scale(0.85);
+  -ms-transform: scale(0.85);
+  transform: scale(0.85); }
+
+header.work-header section.work-cat h1.title {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 50px; }
+
+header.work-header section.work-cat h1.title::after {
+  content: '';
+  background: #fff;
+  display: block;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  width: 100px;
+  height: 6px;
+  margin: 20px auto; }
+
+main.work-content section.project .project-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border: solid red;
+  max-width: 900px;
+  width: 80%;
+  margin: 0 auto; }
+
+main.work-content section.project .project-container .half {
+  -webkit-flex-basis: 50%;
+  flex-basis: 50%;
+  -ms-flex-preferred-size: 50%;
+  max-width: 50%;
+  background: red;
+  border: solid; }
+
 a[class^="btn"] {
   font-family: "brandon-grotesque",sans-serif;
   font-size: 1.2em;

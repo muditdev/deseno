@@ -1,7 +1,9 @@
-include services/services_header.jade
-main.main-content.services-content
-  include services/services_intro.jade
-  section.ds-services
+header.main-header.work-header
+  .container
+    include ../header-top.jade
+  //- header inner content  
+  section.work-cat
+    h1.title Our resent work
     .dss-container
       .dss-item
         .dss-content
@@ -27,13 +29,7 @@ main.main-content.services-content
         .dss-content
           img(src="../assets/img/services/ui-design.svg", alt="")
           a: h3 ui Design
-    a.btn-border.sm.blue  work with us
-          
-      
-      
-      
-      
-      
-    
 
- 
+        
+    
+  
